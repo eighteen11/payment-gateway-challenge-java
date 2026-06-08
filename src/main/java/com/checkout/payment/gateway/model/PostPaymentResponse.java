@@ -1,8 +1,10 @@
 package com.checkout.payment.gateway.model;
 
 import com.checkout.payment.gateway.enums.PaymentStatus;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.UUID;
 
+@Schema(description = "Payment details returned after processing or retrieval")
 public class PostPaymentResponse {
   private UUID id;
   private PaymentStatus status;
